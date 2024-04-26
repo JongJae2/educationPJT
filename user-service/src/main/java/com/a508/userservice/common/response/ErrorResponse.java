@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7a19b53a55fc5e41613b001e32ae0c88056c40824efdd341f14117cc05db7da3
-size 270
+package com.a508.userservice.common.response;
+
+import lombok.Getter;
+
+@Getter
+public class ErrorResponse {
+
+    private final String status = "error";
+
+    private final String message;
+
+    public ErrorResponse(String message) {
+        this.message = message;
+    }
+}

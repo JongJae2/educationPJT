@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:42cd227a927abcfe9fb4a192479c671ac734b79b7c23bbc6f56e0a9b9b43b377
-size 293
+package com.a508.userservice.common.response;
+
+import lombok.Getter;
+
+@Getter
+public abstract class BaseResponse<T> {
+
+    private final String status;
+
+    private final T data;
+
+    public BaseResponse(String status, T data) {
+        this.status = status;
+        this.data = data;
+    }
+}

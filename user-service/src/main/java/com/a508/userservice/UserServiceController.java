@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:aa1fe6083a1d5238a8423d25a5a36d81498b3df2f7f76577f7b9f01cf4d59ca0
-size 390
+package com.a508.userservice;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/user-service")
+public class UserServiceController {
+
+    @GetMapping("/welcome")
+    public String welcome(){
+        return "Hi";
+    }
+}
