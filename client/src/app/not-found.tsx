@@ -1,7 +1,3 @@
-import { NextPage } from 'next';
-
-const NotFound: NextPage = () => {
-  return <div className='bg-yellow-200'>존재하지 않는 페이지입니다.</div>;
-};
-
-export default NotFound;
+version https://git-lfs.github.com/spec/v1
+oid sha256:33820051527648a57f7909f05487bea9acda5a0719dc7d4083b635773250f716
+size 337
