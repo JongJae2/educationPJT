@@ -1,19 +1,3 @@
-server:
-  port: 8081
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://k10a508.p.ssafy.io:8083/eureka
-#      http://localhost:8083/eureka
-spring:
-  application:
-    name: apigateway-service
-  cloud:
-    gateway:
-        routes:
-          - id: user-service
-            uri: lb://USER-SERVICE
-            predicates:
-              - Path=/user-service/**
+version https://git-lfs.github.com/spec/v1
+oid sha256:1913f35f6275ee552bc543c76f031417a0199e3dac47ae1b9209e255f4758b46
+size 513
