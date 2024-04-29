@@ -1,10 +1,3 @@
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: '학습 일지',
-  description: '문해력 학습 서비스 심심한 사과의 분석 보고서',
-};
-
-export default function Page() {
-  return <div className='bg-yellow-400'>학습 일지 페이지</div>;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:10b1fcc600d3a383a0eef92ab829186d8dca3b8983721a91855f5eda0201ba28
+size 2634
