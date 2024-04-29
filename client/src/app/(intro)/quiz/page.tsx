@@ -1,10 +1,3 @@
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: '문해력 테스트',
-  description: '문해력 테스트',
-};
-
-export default function Page() {
-  return <div className='bg-yellow-400'>문해력 테스트 페이지</div>;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:77cc11fa6c56e7471a582e91d26b664eb1a79af5c26041ffb44c5f4bd1ee5ee6
+size 1604
