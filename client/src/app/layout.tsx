@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e7ff32520aae5cffb357ef0bb777b3d202a1a427326d3573683b8f9469d19dcd
-size 404
+import type { Metadata } from 'next';
+import './globals.css';
+
+export const metadata: Metadata = {
+  title: '심심한 사과, 당신의 문해력 지키미',
+  description: '문해력 학습 서비스 심심한 사과',
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang='ko'>
+      <body>{children}</body>
+    </html>
+  );
+}

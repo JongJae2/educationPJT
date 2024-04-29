@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b8bcc7a13a344e7387bbc3ee59ea207219193fd657e535fd64dfd06e985ea2ce
-size 185
+import { NextPage } from 'next';
+
+const NotFound: NextPage = () => {
+  return <div className='bg-yellow-200'>존재하지 않는 페이지입니다.</div>;
+};
+
+export default NotFound;

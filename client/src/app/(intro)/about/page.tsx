@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:26a2efb6d269efd9519e1b1f35f919afa041aa53c70b60fee93819eb963da014
-size 210
+import Header from '@/app/_common/Header';
+
+export default function Page() {
+  return (
+    <div>
+      <Header />
+      <div className='bg-yellow-400'>서비스 소개 페이지 정보</div>
+    </div>
+  );
+}
