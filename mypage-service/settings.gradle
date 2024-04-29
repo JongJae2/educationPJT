@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4b52bd05c34aa2a1a3fab3827754c5a95de46158d6abbef9d042494218f50999
-size 35
+rootProject.name = 'mypageservice'
