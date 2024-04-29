@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8c067433c3c60d776ab152a8b4dba7af8ffc3b618548827b743054209f24900a
-size 210
+export default function Layout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <div>
+      결과 페이지 레이아웃
+      <div>{children}</div>
+      메롱
+    </div>
+  );
+}
