@@ -1,3 +1,3 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9867036fec23fee800b5b87503ee1487303d11365582f15c8d7c0bce9f08d252
-size 160
+export default function Page({ params }: { params: { id: string } }) {
+  return <div className='bg-yellow-400'>{params.id}번 퀴즈 결과 페이지 </div>;
+}
