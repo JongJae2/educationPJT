@@ -1,20 +1,3 @@
-import QuizButton from './QuizButton';
-import StartButton from './StartButton';
-
-export default function Header() {
-  return (
-    <div className='h-20 bg-red-400'>
-      <div className='flex justify-between mx-auto max-w-[1200px]'>
-        <div>로고</div>
-        <div className='flex'>
-          <div className='mx-2'>
-            <QuizButton />
-          </div>
-          <div className='mx-2'>
-            <StartButton />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d827a6db142899037e130dc2276233aba7198ef03f7a76b8156b716d538492ad
+size 705
