@@ -1,16 +1,3 @@
-'use client';
-
-import { useState } from 'react';
-
-export default function MonthlyRecord() {
-  const [today, setToday] = useState<string>('4월 30일');
-  return (
-    <div className='flex flex-col p-5'>
-      <div>달력</div>
-      <div>
-        <div>{today}</div>
-        <div>학습내용</div>
-      </div>
-    </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a1e436f8eaa1fc7a5e8114b1c8d4269cb6a50495a3e0324ad0f73aff70b65d3
+size 1394
