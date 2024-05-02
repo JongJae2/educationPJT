@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:118c36f137307734726147197cf5e8a232543e1a1b7eb6599d67fc8759e077ae
-size 355
+import Link from 'next/link';
+
+export default function QuizButton() {
+  return (
+    <>
+      <Link href={'/quiz'}>
+        <div
+          className='px-7 py-2 cursor-pointer bg-ourBlue rounded-full text-white duration-[0.2s]
+          hover:bg-ourBlue/60'
+        >
+          <button>간편 테스트</button>
+        </div>
+      </Link>
+    </>
+  );
+}
