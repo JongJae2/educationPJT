@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cc2924a11dffb712b70e50025757be7d05f22a5dd555ffd4e27d5e92d4f5f5ac
-size 35
+rootProject.name = 'study-service'

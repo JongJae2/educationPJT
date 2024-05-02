@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6b539aa854a0a6f39689bad4fc700bddd5cc89ada5ab781732a857af236d4ebc
-size 303
+package com.a508.studyservice.respository;
+
+
+import com.a508.studyservice.entity.ChoiceSolved;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ChoiceRepository extends JpaRepository<ChoiceSolved,Integer> {
+
+}

@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:007e495fa5d7fc36143c677c7a31e3cb50bf64ec137dfd6f8df72ee6834ee4bc
-size 332
+package com.a508.studyservice.dto.response;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class TodayLearningResponse {
+
+    private String type;
+
+    private String category;
+
+
+}

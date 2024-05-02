@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f4e6499669b37170860787ec42685bbf159af6f8ffed57b910a335e14499b1ba
-size 370
+package com.a508.studyservice.feign.dto;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserScoreDto {
+
+    private int fact;
+    private int inference;
+    private int voca;
+    private int recognition;
+    private int speed;
+}
+
