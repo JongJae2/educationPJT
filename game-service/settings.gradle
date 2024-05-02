@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8973e98035ba9e00e67e3b12a8a6711266e19369823636a694ed2cbf93e16788
-size 34
+rootProject.name = 'game-service'
