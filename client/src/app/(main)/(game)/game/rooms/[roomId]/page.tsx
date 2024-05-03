@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0aa2fce72053ca9d05498c700a22c7df2436cbc16efd707f12b1894a0609cd41
-size 223
+'use client';
+
+import { useParams } from 'next/navigation';
+
+export default function Page() {
+  const { roomId } = useParams<{ roomId: string }>();
+  return <div className='bg-yellow-400'>게임 {roomId} 페이지</div>;
+}
