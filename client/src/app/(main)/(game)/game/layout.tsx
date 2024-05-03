@@ -1,23 +1,3 @@
-import Image from 'next/image';
-
-export default function Layout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <div lang='ko' className='px-5 h-screen overflow-hidden'>
-      <div className='w-[300px] mx-auto mt-7 mb-3'>
-        <Image
-          className='w-full'
-          src='game-title-2.svg'
-          loading='eager'
-          width={500}
-          height={500}
-          alt='어휘퀴즈 타이틀'
-        />
-      </div>
-      {children}
-    </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:dba6f96a18cf769a214268c1bb4a4280c83ffc8681ad45afbe18cbadd2405c7f
+size 711
