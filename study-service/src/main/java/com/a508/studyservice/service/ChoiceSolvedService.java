@@ -1,16 +1,3 @@
-package com.a508.studyservice.service;
-
-
-import com.a508.studyservice.dto.response.ChoiceSolvedResponse;
-
-import java.util.List;
-
-public interface ChoiceSolvedService {
-
-
-    List<ChoiceSolvedResponse>  getTodayChoice(String token );  // 오늘 거;
-
-    List<ChoiceSolvedResponse>  getSpecificChoice(String token ); // 특정 날짜 조회
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5d515ae783a4d153e30eac53e3d03b9cbd93caeb986ca0e32afdb1b69eef5142
+size 432
