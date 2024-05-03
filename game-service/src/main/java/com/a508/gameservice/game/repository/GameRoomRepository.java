@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:765077de5eef8e686b536e3fc59113eae07dd1210202bbbe27695b995cf66e76
-size 442
+package com.a508.gameservice.game.repository;
+
+import com.a508.gameservice.game.domain.GameRoom;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface GameRoomRepository extends CrudRepository<GameRoom, String> {
+
+    Page<GameRoom> findAll(Pageable pageable);
+}
