@@ -1,10 +1,3 @@
-package com.a508.studyservice.repository;
-
-
-import com.a508.studyservice.entity.TodayLearning;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface TodayLearningRepository  extends JpaRepository<TodayLearning,Integer> {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0ae0ded0897394a99017b4d65b0c06e818858fbb0cf3f53c5ba4fa2f044b3470
+size 540

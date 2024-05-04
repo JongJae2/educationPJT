@@ -1,13 +1,3 @@
-package com.a508.studyservice.service;
-
-import com.a508.studyservice.repository.TopicRepository;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-@Service
-@Transactional(readOnly =true)
-@RequiredArgsConstructor
-public class TopicProblemServiceImpl {
-    private final TopicRepository topicRepository;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f77dc81797908d670ceade0ae9a6b672b96c494472c4d0261b0bca78db7bdfbe
+size 624
