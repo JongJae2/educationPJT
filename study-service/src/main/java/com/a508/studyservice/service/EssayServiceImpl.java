@@ -1,18 +1,3 @@
-package com.a508.studyservice.service;
-
-
-import com.a508.studyservice.feign.UserServiceFeignClient;
-import com.a508.studyservice.repository.EssayRepository;
-import jakarta.transaction.Transactional;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
-
-@Transactional
-@Service
-@RequiredArgsConstructor
-public class EssayServiceImpl {
-
-    private final EssayRepository essayRepository;
-    private final UserServiceFeignClient userServiceFeignClient;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d843d9bcfa76e5a35aaa4fc6541311017b1ccaba34f35efe9f5fd052195e55f2
+size 610
