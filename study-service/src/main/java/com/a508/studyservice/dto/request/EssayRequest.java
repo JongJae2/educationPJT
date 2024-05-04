@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5a598f708293573d45bac6db28286718d7d126eddbe34d5ca1e21ff15c96c171
-size 243
+package com.a508.studyservice.dto.request;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class EssayRequest {
+
+	String myAnswer;
+	String answer;
+
+}
