@@ -1,15 +1,3 @@
-import { create } from 'zustand';
-
-type ValuePiece = Date | null;
-
-type Value = ValuePiece | [ValuePiece, ValuePiece];
-
-interface recordState {
-  today: Value;
-  onChange: (date: Value) => void;
-}
-
-export const useRecordStore = create<recordState>((set) => ({
-  today: new Date(),
-  onChange: (date: Value) => set({ today: date }),
-}));
+version https://git-lfs.github.com/spec/v1
+oid sha256:ca7338d1a8e15395919a94ce270e4a1025a603f850e91c62956da2644e263fc9
+size 1689
