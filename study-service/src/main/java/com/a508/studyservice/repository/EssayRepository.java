@@ -1,11 +1,3 @@
-package com.a508.studyservice.repository;
-
-
-import com.a508.studyservice.entity.EssaySolved;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface EssayRepository extends JpaRepository<EssaySolved,Integer> {
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4d7b797267fbcaac4c6206f2a7ecaf06c33e5565534ce0a2820d75fbdba5375b
+size 352
