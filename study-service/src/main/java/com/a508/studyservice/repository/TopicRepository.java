@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a00eb4240f81a780f6a1b110218815c4a77d5d60ec916d6454576baaf113a9f4
-size 301
+package com.a508.studyservice.repository;
+
+
+import com.a508.studyservice.entity.TopicProblem;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface TopicRepository  extends JpaRepository<TopicProblem,Integer> {
+}
