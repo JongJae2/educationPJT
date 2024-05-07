@@ -1,10 +1,3 @@
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: '회원가입',
-  description: '문해력 학습 서비스 심심한 사과의 회원가입 페이지',
-};
-
-export default function Page() {
-  return <div className='bg-yellow-400'>회원가입3 학습시간 선택</div>;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:927b1f2d8ca49c3adb98ccfa28019589d18a08c1cb1d2e2196c83c05a676812a
+size 638
