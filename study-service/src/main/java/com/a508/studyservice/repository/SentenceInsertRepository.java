@@ -1,9 +1,3 @@
-package com.a508.studyservice.repository;
-
-import com.a508.studyservice.entity.SentenceInsert;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface SentenceInsertRepository extends JpaRepository<SentenceInsert,Integer> {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cc958e523b7cd4418edd24b43b0dcaf17975aa1fa7fd819d2f6829a11d6f939c
+size 391
