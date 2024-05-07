@@ -1,8 +1,3 @@
-package com.a508.userservice.user.domain;
-
-import com.a508.userservice.common.entity.BaseEntity;
-import jakarta.persistence.Entity;
-
-@Entity
-public class User extends BaseEntity {
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:76784068c00ad6bce39c10b07699b46ec406a96a33686b24dba16322113eecf4
+size 988
