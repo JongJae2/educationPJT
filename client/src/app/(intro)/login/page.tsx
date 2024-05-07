@@ -1,10 +1,3 @@
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: '로그인',
-  description: '문해력 학습 서비스 심심한 사과의 로그인 페이지',
-};
-
-export default function Page() {
-  return <div className='bg-yellow-400'>로그인 페이지</div>;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d796812a0be306cf773388ca486a8283a0b5b7f80b34aaa8e02a20c19e300544
+size 1186
