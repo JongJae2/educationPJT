@@ -1,3 +1,9 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eee1aa2ee66cbe768a714c8654f65fe550abe1701c5293c50bdad1263deec0b5
-size 284
+export default function InsertPasswordModal() {
+  return (
+    <>
+      <div className='rounded-md absolute top-0 left-0 w-full h-full bg-ourBlack/30 flex justify-center items-center'>
+        <div className='w-4/5 md:w-1/2 lg:w-1/2 h-1/2 bg-white'></div>
+      </div>
+    </>
+  );
+}
