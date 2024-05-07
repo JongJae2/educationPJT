@@ -1,16 +1,3 @@
-import Link from 'next/link';
-
-export default function StartButton() {
-  return (
-    <>
-      <Link href={'/home'}>
-        <div
-          className='px-7 py-2 cursor-pointer bg-ourBlack rounded-full text-white duration-[0.2s]
-          hover:bg-ourBlack/60'
-        >
-          <button>시작하기</button>
-        </div>
-      </Link>
-    </>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:05b8ead71db88e07bb599ac436a656ca5b9bef24f0886f6dc6f3104f2a6bf615
+size 354
