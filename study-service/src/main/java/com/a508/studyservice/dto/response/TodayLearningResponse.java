@@ -1,22 +1,3 @@
-package com.a508.studyservice.dto.response;
-
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-public class TodayLearningResponse {
-
-    private String type;
-
-    private String category;
-
-    private boolean correct;
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2da0c85fde5952baf78ddbb01b8629ca18a2bdf82681ca1b5343b27fa972491e
+size 337
