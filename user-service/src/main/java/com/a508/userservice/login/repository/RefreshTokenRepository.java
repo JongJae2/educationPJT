@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9dd3c2e2d07639fafe9e74e62a440951abcb6ced795e7dfe5880e4928e539532
-size 414
+package com.a508.userservice.login.repository;
+
+
+import com.a508.userservice.login.data.RefreshToken;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
+
+
+@Repository
+public interface RefreshTokenRepository extends CrudRepository<RefreshToken, String> {
+
+    Optional<RefreshToken> findByRefreshToken(String refreshTokenReq);
+}
