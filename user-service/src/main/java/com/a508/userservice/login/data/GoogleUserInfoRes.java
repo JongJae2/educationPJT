@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:18575762e0b36836245782582b592a522303c3457759fde82176ee6fb21576b3
-size 210
+package com.a508.userservice.login.data;
+
+import lombok.Builder;
+import lombok.Getter;
+
+@Builder
+@Getter
+public class GoogleUserInfoRes {
+
+    private String id;  //구글 식별 id
+    private String email;
+}
