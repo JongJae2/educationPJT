@@ -1,9 +1,3 @@
-export default function MakeRoomBtn() {
-  return (
-    <>
-      <div className='bg-ourBlue text-white text-sm md:text-lg lg:text-lg rounded-md cursor-pointer w-full h-11 flex justify-center items-center hover:bg-ourTheme duration-100'>
-        방만들기
-      </div>
-    </>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b7eeb20ca8313903d8445542b9479e519db8ffe6b4f91b7f4cc374decd79530a
+size 362
