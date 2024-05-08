@@ -1,17 +1,3 @@
-import Image from 'next/image';
-
-export default function Card({ num }: { num: number }) {
-  return (
-    <Image
-      src={`/about/card${num}.png`}
-      loading='eager'
-      width={500}
-      height={500}
-      alt=''
-      className='w-1/3 md:w-1/5 lg:w-1/5 drop-shadow-[2px_2px_2px_rgba(0,0,0,0.2)]'
-    />
-    // <div className='w-1/3 bg-black'>
-    //   <div className='bg-green-500/50 w-[200px] h-[200px]'></div>
-    // </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6aa9952097ede5c10ac5dda826478eb026bebf0f17a038984e743197ed0afd71
+size 441
