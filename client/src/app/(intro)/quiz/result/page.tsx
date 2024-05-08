@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bdc71e7c52bb01b635df6697337b3d2a6a0b50b9335af04053407ffc7b6fb049
-size 363
+import type { Metadata } from 'next';
+import QuizResult from './_components/QuizResult';
+
+export const metadata: Metadata = {
+  title: '문해력 테스트',
+  description: '문해력 테스트',
+};
+
+export default function Page() {
+  return (
+    <div className='max-w-[800px] mx-auto flex items-center justify-center '>
+      <QuizResult />
+    </div>
+  );
+}
