@@ -1,15 +1,3 @@
-import type { Metadata } from 'next';
-import QuizResult from './_components/QuizResult';
-
-export const metadata: Metadata = {
-  title: '문해력 테스트',
-  description: '문해력 테스트',
-};
-
-export default function Page() {
-  return (
-    <div className=' max-w-[800px]  mx-auto flex items-center justify-center '>
-      <QuizResult />
-    </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:313539d51ef394a17b5746c412b7cd4809216c71fad783aa02cb0ec129ff41dc
+size 361
