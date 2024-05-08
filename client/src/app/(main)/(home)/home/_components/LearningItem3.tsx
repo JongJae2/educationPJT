@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5bddd6b37cebe44e2fb84042a5223f52c3383149836ef9fbb8eab128794ba8e2
-size 219
+'use client';
+
+// 주제맞추기 1
+// 정독훈련 2
+// 어휘 3
+// 문장삽입 4
+// 순서맞추기 5
+export default function LearningItem3() {
+  return <div className='flex-1 bg-red-200 rounded-2xl'>어휘</div>;
+}
