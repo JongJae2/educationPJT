@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c1e358d71ddfbb5a332b1f9c522c8e15fe7cb027c21e371ee0cb6651ea0728e5
-size 524
+server:
+  port: 8084
+
+spring:
+  application:
+    name: user-service
+  jpa:
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update
+#      show-sql: true
+
+  profiles:
+    include:
+      - secret
+      - cors
+
+  data:
+    redis:
+      host: k10a508.p.ssafy.io
+      port: 6379
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://k10a508.p.ssafy.io:8083/eureka
+#      http://localhost:8083/eureka
