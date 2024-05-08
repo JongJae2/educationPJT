@@ -1,16 +1,3 @@
-'use client';
-
-import { useParams } from 'next/navigation';
-import ChatWrapper from './_component/ChatWrapper';
-
-export default function Page() {
-  const { roomId } = useParams<{ roomId: string }>();
-  return (
-    <>
-      <div>{roomId}</div>
-      <div className='flex justify-center'>
-        <ChatWrapper />
-      </div>
-    </>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:459a84e64366fcdd1fd321f0ecfb58d3548fa2f0e2ecf1480322d0d0b2e659da
+size 2540
