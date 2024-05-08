@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2023a144f2adc22fbf5d566f4784edcc2a28c60f7c65ed72d0e4de2e1046a0b
-size 297
+package com.a508.userservice.user.data;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+
+@Getter
+@Builder
+@AllArgsConstructor
+public class MonthlyStudyRes {
+
+	private int daysCompleteLearning;
+
+	private String mostLearnedStudy;
+
+	private String mostReadCategory;
+}
