@@ -1,18 +1,3 @@
-package com.a508.gameservice.game.data;
-
-import lombok.Getter;
-
-@Getter
-public class ChatMessageReq {
-
-    public enum MessageType {
-        CORRECT,ENTER,EXIT,TALK
-    }
-
-    private MessageType type;
-    private String roomId;
-    private String sender;
-    private String message;
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4605452ae797b1e082027e91df1505f9ae8473805d541a8906bcc7489272c9fe
+size 325
