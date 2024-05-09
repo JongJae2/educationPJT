@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:70e2892d77c8080c861ce08e9abc02488d34878a36fcebb888cf3463dee635d2
-size 379
+import Link from 'next/link';
+
+export default function StartButton() {
+  return (
+    <>
+      <Link href={'/login'}>
+        <div
+          className='text-sm px-2 md:px-7 lg:px-7 py-2 cursor-pointer bg-ourBlack rounded-full text-white duration-[0.2s]
+          hover:bg-ourBlack/60'
+        >
+          <button>시작하기</button>
+        </div>
+      </Link>
+    </>
+  );
+}
