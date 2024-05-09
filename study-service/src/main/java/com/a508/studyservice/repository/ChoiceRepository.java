@@ -1,20 +1,3 @@
-package com.a508.studyservice.repository;
-
-
-import com.a508.studyservice.entity.ChoiceSolved;
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import java.util.List;
-import java.util.Optional;
-
-@Repository
-public interface ChoiceRepository extends JpaRepository<ChoiceSolved,Integer> {
-
-   List<ChoiceSolved> findByUserId(Integer userId);
-
-
-   ChoiceSolved findByUserIdAndTypeAndProblemId(Integer userId, String type, Integer problemId);
-
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2eb49944d2cbc2798062770e7538c6ffdb7a7bbae3a78f5b52e6f3e35a658b23
+size 585
