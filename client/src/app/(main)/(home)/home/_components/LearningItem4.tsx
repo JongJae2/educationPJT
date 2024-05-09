@@ -1,10 +1,3 @@
-'use client';
-
-// 주제맞추기 1
-// 정독훈련 2
-// 어휘 3
-// 문장삽입 4
-// 순서맞추기 5
-export default function LearningItem4() {
-  return <div className='flex-1 bg-red-200 rounded-2xl'>문장삽입</div>;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:847e541daa8afd0481268806e0bc6a855214d8767ef3936a31f80688b7188ce5
+size 225
