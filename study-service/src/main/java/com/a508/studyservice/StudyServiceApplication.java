@@ -1,15 +1,3 @@
-package com.a508.studyservice;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-
-@SpringBootApplication
-@EnableDiscoveryClient
-public class StudyServiceApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(StudyServiceApplication.class, args);
-	}
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a335addfe39902aaf579949cb36f0644fb9017f6aed2285e20b40b234b390d54
+size 761

@@ -1,13 +1,3 @@
-server:
-  port: 8086
-
-spring:
-  application:
-    name: study-service
-
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://k10a508.p.ssafy.io:8083/eureka
+version https://git-lfs.github.com/spec/v1
+oid sha256:687a51fac80e78d147c181b9975a0413751314eeda4de8871963ec336fca9416
+size 541
