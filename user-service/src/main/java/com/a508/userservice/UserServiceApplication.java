@@ -1,17 +1,3 @@
-package com.a508.userservice;
-
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
-
-@SpringBootApplication
-@EnableDiscoveryClient
-@EnableJpaAuditing
-public class UserServiceApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(UserServiceApplication.class, args);
-	}
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:d32e52804dc02e0ca1aad1d27bfe1831a80638c3272e308a0f96d60d03a073b3
+size 606
