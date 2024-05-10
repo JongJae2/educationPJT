@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ae6bc3c7a4baaeed1e2736dc0879efbe52bfdf46b194075c1d52da50072c7c00
-size 500
+'use client';
+
+import { useGameRoomStore } from '@/stores/game-room-info';
+
+export default function GameScoreBoard() {
+  const { roomPlayerRes } = useGameRoomStore();
+
+  return (
+    <div className='flex flex-col gap-1 p-3 bg-white rounded-xl'>
+      <div className='text-center'>점수</div>
+      {roomPlayerRes?.map((player, idx) => (
+        <div key={idx} className='flex justify-between'>
+          <div>{player.nickname}</div>
+          <div>-</div>
+        </div>
+      ))}
+    </div>
+  );
+}
