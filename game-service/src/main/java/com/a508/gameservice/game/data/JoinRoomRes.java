@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7e1fe2bf2f4951802ba8d4113f26ccb4840c8fe6b72d534e1bc38228ff8acf38
-size 490
+package com.a508.gameservice.game.data;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class JoinRoomRes {
+
+    private String myNickname;
+    private Integer myUserId;
+    private Integer roomId;
+    private Integer maxNum;
+    private Integer quizCount;
+    private Integer creatorId;
+    private List<RoomPlayerRes> roomPlayerRes;
+}
