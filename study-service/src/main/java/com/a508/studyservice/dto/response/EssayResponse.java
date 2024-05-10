@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6915102e3e8f8a73964d9b0a465ea3f6aa4e7c314b56b36c48dd48d10f3a646d
-size 528
+package com.a508.studyservice.dto.response;
+
+import java.time.LocalDateTime;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class EssayResponse {
+
+
+    private String content;
+
+    private String userAnswer;
+
+    private String answer;
+
+    //어떤 유형 문제인지
+    private String type;
+
+    private Integer problemId;
+
+    private Integer similarity;
+
+
+
+}
