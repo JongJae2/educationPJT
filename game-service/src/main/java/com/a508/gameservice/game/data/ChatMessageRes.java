@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2cf821affcd44db6df7edf44a0c74ffd0788de7c4c53b302bfadcc6b2732bbc0
-size 356
+package com.a508.gameservice.game.data;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Builder
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+public class ChatMessageRes {
+
+    private MessageType type;
+    private String content;
+    private String writer;
+    private Integer target;
+
+}

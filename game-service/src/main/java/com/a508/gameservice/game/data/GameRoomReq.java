@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:880f318efef6b27848a31d6a695ce5baa0ea62ae14bc706338e163d948079022
-size 391
+package com.a508.gameservice.game.data;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@Getter
+@AllArgsConstructor
+@Builder
+public class GameRoomReq {
+
+    private String roomName;
+    private Boolean isSecret;
+    private String roomPassword;
+    private Integer maxNum;
+    private Integer quizCount;
+}
