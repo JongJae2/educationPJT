@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8170d4dffde1e0c82bbc10d18c56a564f31f7e34d3a0aebfa78da0107c8182ab
-size 900
+'use client';
+
+import { useWebsocketStore } from '@/stores/websocketStore';
+
+export default function TimerWrapper({ roomId }: { roomId: string }) {
+  const { timer, startGame, startTimer, isGaming } = useWebsocketStore();
+  if (!isGaming || timer > 30) return null;
+  return (
+    <>
+      <div className='flex flex-col w-full p-3 bg-white rounded-xl'>
+        <div className='text-center'>남은 시간</div>
+        <div className='text-center text-2xl'>{timer}</div>
+      </div>
+    </>
+  );
+}
