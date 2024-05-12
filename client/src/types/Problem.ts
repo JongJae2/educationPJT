@@ -1,14 +1,3 @@
-export interface IBasicProblem {
-  content: string;
-  option1: string;
-  option2: string;
-  option3: string;
-  userAnswer: number | null;
-  answer: number | null;
-  category: string | null;
-  type: '어휘';
-  problemId: number;
-  correct: boolean;
-}
-
-export type BasicProblemResponse = IBasicProblem[];
+version https://git-lfs.github.com/spec/v1
+oid sha256:26fe3f9af2f362209869df6259b1d621db854dfac8fc261cc43e564e17687848
+size 724
