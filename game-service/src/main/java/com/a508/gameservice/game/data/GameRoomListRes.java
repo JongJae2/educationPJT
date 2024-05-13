@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:168b08330ab640b1a0f21bcfe8431872c13dc900ea3df79017a9c94bb79dacae
-size 239
+package com.a508.gameservice.game.data;
+
+import lombok.Builder;
+import lombok.Getter;
+
+import java.util.List;
+@Builder
+@Getter
+public class GameRoomListRes {
+
+    private List<GameRoomRes> gameRoomResList;
+    private Boolean isEndPage;
+}

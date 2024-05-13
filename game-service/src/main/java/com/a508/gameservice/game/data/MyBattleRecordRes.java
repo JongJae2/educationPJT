@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ffb4caf4a94da5bcd9799937e5a4234efc0895df73187e11c17f578d5409d319
-size 397
+package com.a508.gameservice.game.data;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class MyBattleRecordRes {
+
+    //우승횟수, 총경기횟수 , 승률, 랭킹 , 점수
+    private int victory;
+    private int game;
+    private int ranking;
+    private int rating;
+    private int odds;
+
+}
