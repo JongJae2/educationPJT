@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:246a26a1a9a668bd899ed67438513ebb985d587d9667b78ab25674bf247739e7
-size 313
+'use client';
+
+import { useGetNickname } from '@/stores/get-nickname';
+
+export default function MyInfo() {
+  const { data: nickname } = useGetNickname();
+  const myNickname = nickname ?? '사용자';
+  return (
+    <>
+      <span className='text-2xl font-bold'>{myNickname}</span>의 활동 기록
+    </>
+  );
+}
