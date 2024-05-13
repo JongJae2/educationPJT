@@ -1,13 +1,3 @@
-import { NextPage } from 'next';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: '404 Not Found',
-  description: '존재하지 않는 페이지입니다',
-};
-
-const NotFound: NextPage = () => {
-  return <div className='bg-yellow-200'>존재하지 않는 페이지!</div>;
-};
-
-export default NotFound;
+version https://git-lfs.github.com/spec/v1
+oid sha256:7bfcfe9514bdb14e5d4591b91e50f150139d061c9124b1ee87db0c278dedd4a0
+size 2794
