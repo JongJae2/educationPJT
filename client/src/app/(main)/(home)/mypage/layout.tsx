@@ -1,19 +1,3 @@
-import MyPageNav from './_components/MyPageNav';
-
-export default function MyPageLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <>
-      <div>
-        <div className='text-xl py-5'>
-          <span className='text-2xl font-bold'>문해너구리</span>의 활동 기록
-        </div>
-        <MyPageNav />
-      </div>
-      <>{children}</>
-    </>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:76606667c6ed02e6a2f10a147f98f7086486f0eb5b1d2e856075a8a2597480d6
+size 370
