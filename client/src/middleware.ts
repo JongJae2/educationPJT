@@ -1,10 +1,3 @@
-import type { NextRequest } from 'next/server';
-import { NextResponse } from 'next/server';
-
-export async function middleware(request: NextRequest) {
-  // return NextResponse.redirect(new URL('/login/authentication', request.url));
-}
-
-// export const config = {
-//   matcher: '/home',
-// };
+version https://git-lfs.github.com/spec/v1
+oid sha256:fffd2dd172187af56adf24e8559a0369d497956f5a2ad000d46dbfbfec53881a
+size 651
