@@ -1,19 +1,3 @@
-package com.a508.userservice.user.data;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-
-@Getter
-@Builder
-@AllArgsConstructor
-public class RecordRes {
-
-	private int numberOfWin;
-
-	private int numberOfGame;
-
-	private int rating;
-
-	private int rank;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:216105d01c41e12fae88ee13adb171306031af96434ed72bb509216d006b0e4d
+size 301
