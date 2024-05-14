@@ -1,19 +1,3 @@
-import { create } from 'zustand';
-
-type MemberScore = {
-  score: number;
-  nickname: string;
-  id: number;
-};
-
-interface GameScore {
-  players: MemberScore[];
-  addPlayers: (player: MemberScore[]) => void;
-}
-
-export const useGameScoreStore = create<GameScore>((set) => ({
-  players: [],
-  addPlayers: (players: MemberScore[]) => {
-    set({ players: players });
-  },
-}));
+version https://git-lfs.github.com/spec/v1
+oid sha256:d1ccbc4ea4f15911ebeef615c12f6aa8d38dc3a1912c9b4de8483561d4eb7649
+size 1170

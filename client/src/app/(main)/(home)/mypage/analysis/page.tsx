@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:270bad8d05cddf70123039a1fb10d78a2a5928ae85b228c29f0dd96bf6854fdd
-size 2133
+import type { Metadata } from 'next';
+import MyAbility from './_components/Myability';
+
+export const metadata: Metadata = {
+  title: '분석 보고서',
+  description: '문해력 학습 서비스 심심한 사과의 분석 보고서',
+};
+
+export default async function Analysis() {
+  return (
+    <div className='w-full'>
+      <div className='flex flex-col '>
+        <div className='pt-5 pb-2 text-lg text-ourBlack'>종합 평가</div>
+        <MyAbility />
+      </div>
+    </div>
+  );
+}
