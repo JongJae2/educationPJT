@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b97c507af739e9f33fb09e7747f42dd2389230c6f23d48af527edca0fa9a6eb7
-size 378
+package com.a508.userservice.user.data;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+public class UserAbilityRes {
+
+	private Integer userId;
+
+	private Integer fact;
+
+	private Integer inference;
+
+	private Integer voca;
+
+	private Integer recognition;
+
+	private Integer speed;
+
+}
