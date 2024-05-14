@@ -1,19 +1,3 @@
-'use client';
-
-import CalendarComponent from './CalendarComponent';
-import RecordList from './RecordList';
-
-export default function MonthlyRecord() {
-  return (
-    <div className='flex flex-col p-5 w-full'>
-      <div className='flex justify-center'>
-        <div>
-          <CalendarComponent />
-        </div>
-      </div>
-      <div>
-        <RecordList />
-      </div>
-    </div>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ee21ea19d588b611bce41885a0b07b6903caff687936018fa625cdc09a0eefd9
+size 1578
