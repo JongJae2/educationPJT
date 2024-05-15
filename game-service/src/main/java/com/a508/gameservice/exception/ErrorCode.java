@@ -1,20 +1,3 @@
-package com.a508.gameservice.exception;
-
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
-
-@Getter
-@RequiredArgsConstructor
-public enum ErrorCode {
-
-    //Game
-    PLAYER_IS_FULL_ERROR(404, "GME001", "제한 인원을 초과했습니다."),
-    ROOM_IS_NOT_EXIST(404, "GME002", "해당 방이 존재하지 않습니다"),
-    RESULT_IS_EMPTY(400, "GME003", "결과값이 없습니다.");
-
-    private final int status;
-
-    private final String code;
-
-    private final String message;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:34e70a047c18a5c4de8fc279430e65e2dd0a8460435cd2a8d914ec3c186388b3
+size 586
