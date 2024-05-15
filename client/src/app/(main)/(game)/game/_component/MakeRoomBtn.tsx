@@ -1,14 +1,3 @@
-import Link from 'next/link';
-
-export default function MakeRoomBtn() {
-  return (
-    <>
-      <Link
-        href={'game/create'}
-        className='flex items-center justify-center w-full text-sm text-white duration-100 rounded-md cursor-pointer bg-ourBlue md:text-lg lg:text-lg h-11 hover:bg-ourTheme'
-      >
-        방만들기
-      </Link>
-    </>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b7eeb20ca8313903d8445542b9479e519db8ffe6b4f91b7f4cc374decd79530a
+size 362
