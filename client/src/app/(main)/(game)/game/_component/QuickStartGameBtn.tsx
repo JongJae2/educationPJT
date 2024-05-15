@@ -1,9 +1,3 @@
-export default function QuickStartGameBtn() {
-  return (
-    <>
-      <div className='bg-white/80 rounded-md cursor-pointer text-sm md:text-lg lg:text-lg w-full h-11 flex justify-center items-center border-2 border-white hover:border-ourRed duration-100'>
-        빠른 대전
-      </div>
-    </>
-  );
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:97223b8ac9745748f58d94ea9fbe97f7272177746d95a5a295b6b268077a81f0
+size 2753
