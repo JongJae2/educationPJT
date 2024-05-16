@@ -1,32 +1,3 @@
-package com.a508.userservice.user.data;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-
-import java.util.List;
-
-@Getter
-@Builder
-@AllArgsConstructor
-public class DateCalendarRes {
-
-	private String status;
-
-	private DateCalendar data;
-
-	public static class DateCalendar {
-
-		private List<DayStudyCalendar> dayStudyCalendars;
-
-		@Getter
-		@Builder
-		@AllArgsConstructor
-		public static class DayStudyCalendar {
-
-			private String problemType;
-			private boolean correct;
-		}
-	}
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:34c1bfae522dfc41443d583b8524bbbc6affd031e4f54e901aa8e72de16e7446
+size 552
