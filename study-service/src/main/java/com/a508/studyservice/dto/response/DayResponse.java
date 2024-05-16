@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:eacca3d44e2952290e5f3651514de8d1a45ec2b366cf5f8a1daab211e0117710
-size 249
+package com.a508.studyservice.dto.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class DayResponse {
+
+	String problemType;
+	boolean isCorrect;
+}

@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b3b8d9d3de8269a6b6e41abe936a4adfb02dba03c33759e0d379fc3d492f067f
-size 456
+package com.a508.studyservice.repository;
+
+
+import java.util.List;
+import java.util.Optional;
+
+import com.a508.studyservice.entity.EssaySolved;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface EssayRepository extends JpaRepository<EssaySolved,Integer> {
+
+    EssaySolved findByProblemId(Integer problemId);
+
+    List<EssaySolved> findByUserId(Integer userId);
+
+}
