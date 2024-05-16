@@ -1,22 +1,3 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: false,
-  webpack: (config, { isServer }) => {
-    config.module.rules.push({
-      test: /\.(mp3|wav|ogg)$/,
-      use: {
-        loader: 'file-loader',
-        options: {
-          publicPath: '/_next/static/sounds/',
-          outputPath: 'static/sounds/',
-          name: '[name].[ext]',
-          esModule: false,
-        },
-      },
-    });
-
-    return config;
-  },
-};
-
-export default nextConfig;
+version https://git-lfs.github.com/spec/v1
+oid sha256:8aa76a171dfd3377de8b57cf9f0cb3cd1c1438aaeb632b0631f5e7f1bf0477bf
+size 483
