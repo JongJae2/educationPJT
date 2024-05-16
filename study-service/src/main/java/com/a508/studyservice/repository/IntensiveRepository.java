@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:53df0361c574425f69a0c4e769099cc3a9258f0f328f856d2fbb85032ba54df6
-size 373
+package com.a508.studyservice.repository;
+
+import java.util.List;
+
+import com.a508.studyservice.entity.Intensive;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface IntensiveRepository extends JpaRepository<Intensive,Integer> {
+
+	List<Intensive> findByCategory(String category);
+}
+
