@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f160399babe619805fc654cb2a6326e78d0bbf24285ba38cdca02a1720d3081a
-size 382
+package com.a508.studyservice.service;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.List;
+
+import com.a508.studyservice.dto.response.ProblemResponse;
+import com.a508.studyservice.dto.response.SentenceProblemResponse;
+
+public interface SentenceInsertService {
+
+	List<SentenceProblemResponse> getSentenceProblems(String token, LocalDateTime date );
+}

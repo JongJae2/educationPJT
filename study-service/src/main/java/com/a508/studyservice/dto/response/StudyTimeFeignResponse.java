@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:3dea8ce60243ceffaa476a0a47cf2d62c927646a54770bc06c359e9a74b113b4
-size 292
+package com.a508.studyservice.dto.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalTime;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class StudyTimeFeignResponse {
+
+    String userId;
+    LocalTime studyTime;
+}

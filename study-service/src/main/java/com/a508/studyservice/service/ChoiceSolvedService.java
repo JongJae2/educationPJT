@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:86a0685f6b033077e96584b718a0f4fec262c65ac31ce8c20ea5e4015edb0d6f
-size 375
+package com.a508.studyservice.service;
+
+
+import com.a508.studyservice.dto.request.ChoiceRequest;
+import com.a508.studyservice.dto.response.ChoiceSolvedResponse;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.List;
+
+public interface ChoiceSolvedService {
+
+
+    List<ChoiceSolvedResponse> postChoice(String token, ChoiceRequest choiceRequest);
+
+}

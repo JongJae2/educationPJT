@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:36f66e99b3019ace32ec46a800460008ca4133952b291fa712622942d3e74fbb
-size 337
+package com.a508.studyservice.service;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+import com.a508.studyservice.dto.response.ProblemResponse;
+
+public interface IntensiveService {
+
+	List<ProblemResponse> getIntensiveProblems(String token, LocalDateTime dateTime);
+
+	List<ProblemResponse> getTodayIntensive(String token);
+
+
+}

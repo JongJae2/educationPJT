@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6595a1afa508e28aa4dd65e2822d47526ba9fe48226b5283327d8081d4d9de9e
-size 263
+package com.a508.studyservice.dto.request;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class FeignEssaySimilarityRequest {
+    String myAnswer;
+    String answer;
+}

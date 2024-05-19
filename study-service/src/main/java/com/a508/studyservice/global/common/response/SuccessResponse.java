@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8b42145e0562d7f47cffa0ae4ca528f6302a64f5a2761648f941e5758c311bdc
-size 479
+package com.a508.studyservice.global.common.response;
+
+import org.springframework.http.HttpStatus;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+
+@Getter
+@Builder
+@AllArgsConstructor
+public class SuccessResponse<T> {
+	private String status;
+	@JsonInclude(JsonInclude.Include.NON_NULL)
+	private T data;
+
+	public SuccessResponse( T data) {
+		this.status = "success";
+		this.data = data;
+	}
+
+}

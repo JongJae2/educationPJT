@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5005f08691794b27ca6c1a8c6cb7db7b283728c755e3fb0c3d4066951ae987b4
-size 325
+package com.a508.studyservice.kafka;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalTime;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+public class NotificationMessage {
+    private String userId;
+    private LocalTime studyTime;
+    private String message;
+}
