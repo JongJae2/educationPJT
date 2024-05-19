@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac0f97fd3bf6a92b05cebec654cb3f6d58f7bdb6bde10d2844d8d6055985e593
-size 480
+'use client';
+import { useRouter } from 'next/navigation';
+import Image from 'next/image';
+import closeButton from '@/../public/learn/close-button.svg';
+
+export default function CloseButton() {
+  const router = useRouter();
+  const handleClick = () => {
+    router.push('/home');
+  };
+  return (
+    <div>
+      <div className='w-6 cursor-pointer text-xl font-semibold' onClick={handleClick}>
+        <Image src={closeButton} alt='닫기 버튼' />
+      </div>
+    </div>
+  );
+}
