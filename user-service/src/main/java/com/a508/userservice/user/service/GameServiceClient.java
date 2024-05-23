@@ -1,13 +1,3 @@
-package com.a508.userservice.user.service;
-
-import com.a508.userservice.user.data.MyBattleRecordRes;
-import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestHeader;
-
-@FeignClient(name = "game-service")
-public interface GameServiceClient {
-
-	@GetMapping("/record")
-	public MyBattleRecordRes getMyRecord(@RequestHeader(value = "Authorization") String token);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8f9e2287224c3ffb0211e202af200be59a8080739d242d18bd5a141cdba840dc
+size 472

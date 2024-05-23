@@ -1,11 +1,3 @@
-package com.a508.userservice.user.repository;
-
-import com.a508.userservice.user.domain.UserCategory;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.List;
-
-public interface UserCategoryRepository extends JpaRepository<UserCategory, Integer> {
-
-	List<UserCategory> findByUserId(int userId);
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cef07591e73ed67c5edd6dade662821b21f4e1590c2766db468060dc2b186a2d
+size 324

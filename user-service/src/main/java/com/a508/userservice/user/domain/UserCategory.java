@@ -1,21 +1,3 @@
-package com.a508.userservice.user.domain;
-
-import com.a508.userservice.common.entity.BaseEntity;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import lombok.*;
-
-@Entity
-@Getter
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class UserCategory extends BaseEntity {
-
-	@Column(nullable = false)
-	private Integer userId;
-
-	@Column(nullable = false)
-	private String category;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a5bf7e99a5d8a2e0388730e636d36acb7ff091bd8a3760d0fdc5ab8f71c2196f
+size 438

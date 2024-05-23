@@ -1,24 +1,3 @@
-package com.a508.userservice.user.data;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-
-import java.util.List;
-
-@Getter
-@Builder
-@AllArgsConstructor
-public class DailyStudyRes {
-	private List<StudyInfo> DailyStudyList;
-
-	@Getter
-	@Builder
-	@AllArgsConstructor
-	public static class StudyInfo {
-
-		private String problemType;
-
-		private Boolean isCorrect;
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:7e1cd9cf6028232628299adbec90cf84f89755953e094f4ed073ad98dee00c93
+size 392
