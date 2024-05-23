@@ -1,22 +1,3 @@
-package com.a508.studyservice.dto.response;
-
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
-public class FeignUserScoreResponse {
-
-    private Integer userId;
-    private Integer fact;
-    private Integer inference;
-    private Integer voca;
-    private Integer recognition;
-    private Integer speed;
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:ac14742c430162deb3cb25fc270a1f560cee1919e3321bfc811a7b6da9e6cba0
+size 418
