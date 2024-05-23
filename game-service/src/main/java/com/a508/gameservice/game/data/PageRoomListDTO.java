@@ -1,15 +1,3 @@
-package com.a508.gameservice.game.data;
-
-import com.a508.gameservice.game.domain.GameRoom;
-import lombok.Builder;
-import lombok.Getter;
-
-import java.util.List;
-
-@Getter
-@Builder
-public class PageRoomListDTO {
-
-    private List<GameRoom> gameRoomList;
-    private Boolean isEndPage;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:811b2824e5ffbedce36f819e590cfebe0a8cec15c2c71800b4e9190eb58d1fcc
+size 284
