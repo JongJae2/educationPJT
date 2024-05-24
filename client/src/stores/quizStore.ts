@@ -1,19 +1,3 @@
-import { create } from 'zustand';
-
-interface QuizStoreState {
-  score: number;
-  setScore: (data: number) => void;
-  initScore: (data: number) => void;
-}
-
-const useQuizStore = create<QuizStoreState>((set) => ({
-  score: 0,
-  setScore: (data: number) => {
-    set((state) => ({ score: state.score + data }));
-  },
-  initScore: (data: number) => {
-    set({ score: 0 });
-  },
-}));
-
-export default useQuizStore;
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce4bd1888dcb799aef0376aa14bcc0c00ce2f34a27e1e1fc19a8f91eb7a49ac7
+size 409

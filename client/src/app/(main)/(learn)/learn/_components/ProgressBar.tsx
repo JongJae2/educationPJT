@@ -1,14 +1,3 @@
-'use client'
-import React from 'react';
-
-const ProgressBar: React.FC<{ progress: number }> = ({progress}) => {
-  return (
-    <div className='flex gap-3'>
-      <div className={`flex-1 rounded-3xl p-1 ${progress >= 1 ? 'bg-ourBlue' : 'bg-ourGray'}`}></div>
-      <div className={`flex-1 rounded-3xl p-1 ${progress >= 2 ? 'bg-ourBlue' : 'bg-ourGray'}`}></div>
-      <div className={`flex-1 rounded-3xl p-1 ${progress >= 3 ? 'bg-ourBlue' : 'bg-ourGray'}`}></div>
-    </div>
-  );
-};
-
-export default ProgressBar;
+version https://git-lfs.github.com/spec/v1
+oid sha256:9eb2958af3fc97b0c94e9e05d67206a7d351cfc1010b069f35fcfa5d496cec29
+size 509
