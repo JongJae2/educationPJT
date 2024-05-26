@@ -1,16 +1,3 @@
-package com.a508.gameservice.response;
-
-import lombok.Getter;
-
-@Getter
-public abstract class BaseResponse<T> {
-
-    private final String status;
-
-    private final T data;
-
-    public BaseResponse(String status, T data) {
-        this.status = status;
-        this.data = data;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3d24a0ae26d1b406296e38f884ff3af05d8ebc19678f09f7323f9179690251d1
+size 286
