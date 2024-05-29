@@ -1,3 +1,8 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8fb290845c6748ed6b0542aaf58d3aa3ad313fa302dd5c99a155898f2ad005c5
-size 253
+package com.a508.gameservice.game.repository;
+
+import com.a508.gameservice.game.domain.BattleRecord;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BattleRecordRepository extends JpaRepository<BattleRecord,Integer> {
+
+}

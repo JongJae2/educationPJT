@@ -1,16 +1,3 @@
-package com.a508.userservice.login.data;
-
-import lombok.Builder;
-import lombok.Getter;
-
-@Builder
-@Getter
-public class GoogleOAuthTokenRes {
-
-    private String access_token;
-    private String expires_in;
-    private String refresh_token;
-    private String scope;
-    private String token_type;
-    private String id_token;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6c3f38e43c6273d4eed0a0c06345be54bd8158cfef5afdc5c8a1d537841ec3e1
+size 327

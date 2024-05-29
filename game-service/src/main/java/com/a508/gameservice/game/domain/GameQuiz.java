@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0b56bcee8726ad9a1af148d0af9dd366cf118a0ed085a1d30fbd23716102121d
-size 393
+package com.a508.gameservice.game.domain;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+@Entity
+@Getter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+public class GameQuiz {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    Integer id;
+
+    @Column(nullable = false)
+    String quiz;
+
+    @Column(nullable = false)
+    String answer;
+
+}
