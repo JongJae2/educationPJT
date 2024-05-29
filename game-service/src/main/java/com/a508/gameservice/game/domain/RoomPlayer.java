@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:08358d52ffe4c912938143fd05b718d9cb7220eafbaa1619957565092328314b
-size 461
+package com.a508.gameservice.game.domain;
+
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import org.springframework.data.redis.core.RedisHash;
+
+
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+@RedisHash(value = "roomPlayer", timeToLive = 60 * 60 * 24 * 7)
+public class RoomPlayer {
+
+    @Id
+    private Integer userId;
+
+    private String joinGameTime;
+}

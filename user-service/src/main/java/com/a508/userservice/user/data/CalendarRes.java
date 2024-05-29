@@ -1,19 +1,3 @@
-package com.a508.userservice.user.data;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-
-import java.util.Calendar;
-import java.util.List;
-
-@Getter
-@Builder
-@AllArgsConstructor
-public class CalendarRes {
-
-	private String status;
-
-	private List<Integer> data;
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e3a032653b7ca3dfe9ac36f13387de15802675b0c8df693c26742a212fd4fbbe
+size 294

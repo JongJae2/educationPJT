@@ -1,29 +1,3 @@
-package com.a508.userservice.login.data;
-
-import lombok.Builder;
-import lombok.Getter;
-
-@Builder
-@Getter
-public class OauthTokenRes {
-
-    private Integer memberId;
-
-    private String tokenType;
-
-    private String accessToken;
-
-    private Integer expiresIn;
-
-    private String refreshToken;
-
-    private Integer refreshTokenExpiresIn;
-
-    private boolean signUp;
-
-    private Integer signUpProcess;
-
-    public void isSignUp(boolean signUp) {
-        this.signUp = signUp;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:84bd37e817f1dc9703684b25b2178937a54841c20229af271f44ad07e29ab7dc
+size 486
