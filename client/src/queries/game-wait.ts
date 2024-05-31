@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5b214fd3fcc82ed890137c726e597278107dc5e6e05ba553080446d34393bce7
-size 885
+import axios from 'axios';
+import { useQuery, useMutation } from '@tanstack/react-query';
+import instance from '@/utils/interceptor';
+
+type GameRoomInfo = {
+  id: number;
+  roomName: string;
+  isSecret: boolean;
+  roomPassword: string;
+  nowNum: number;
+  maxNum: number;
+  isStarted: boolean;
+  roomCreatorName: string;
+  quizCount: number;
+  isEndPage: boolean;
+};
+
+type GRResponse = {
+  data: { gameRoomResList: GameRoomInfo[]; isEndPage: boolean };
+};
+
+// async - await 함수 작성
+const getGameRoomList = async (pageNum: number) => {
+  const response = await instance.get<GRResponse>(
+    `${process.env.NEXT_PUBLIC_API_SERVER}/game-service/rooms/${pageNum}`
+  );
+  return response;
+};
+
+// useQuery 리턴하는 Hook
+export const useGameRoomList = (pageNum: number) => {
+  return useQuery({ queryKey: ['getGameRoomList', pageNum], queryFn: () => getGameRoomList(pageNum) });
+};

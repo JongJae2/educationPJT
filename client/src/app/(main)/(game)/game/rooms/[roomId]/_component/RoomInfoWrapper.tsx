@@ -1,3 +1,26 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5a0b81a8b22b85008f7633cb2aa074216ac7403c9c1f0526bbe2ec234c794735
-size 845
+'use client';
+
+import Image from 'next/image';
+
+import rock from '@/../public/game/rock.svg';
+import unRock from '@/../public/game/unrock.svg';
+import { useGameRoomStore } from '@/stores/game-room-info';
+
+export default function RoomInfoWrapper() {
+  const { roomName, roomId, quizCount } = useGameRoomStore();
+
+  const formattedRoomId = roomId?.toString().padStart(3, '0');
+  return (
+    <div className='flex flex-col gap-3 px-5 pt-3 pb-5 bg-white rounded-xl w-full'>
+      <div className='font-Ansungtangmyun text-lg text-center'>{formattedRoomId}번 방</div>
+      <div>
+        <div className='font-Ansungtangmyun text-ellipsis'>
+          방 제목 : <span>{roomName}</span>
+        </div>
+        <div className='font-Ansungtangmyun'>
+          문제 수 : <span>{quizCount} 문제</span>
+        </div>
+      </div>
+    </div>
+  );
+}

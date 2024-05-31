@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5fac109f0413c188a68bef70507dcec70da0dd4ec760b6aa6da06ed24560f4b9
-size 663
+package com.a508.gameservice.game.service;
+
+import com.a508.gameservice.game.data.UserListReq;
+import com.a508.gameservice.game.data.UserListRes;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.*;
+
+@FeignClient(name = "user-service")
+public interface UserServiceClient {
+
+
+    @GetMapping("/userId")
+    public Integer getUserIdByToken(@RequestHeader("Authorization") String token);
+
+    @PostMapping("/nicknames")
+    public UserListRes getNicknameByUserId(@RequestBody UserListReq userListReq);
+
+    @GetMapping("/nicknames")
+    public String getNicknameByUserId(@RequestParam("userId") Integer userId);
+}

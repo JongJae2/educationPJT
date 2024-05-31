@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:04dc6c18bbeae34497678a70967c9922e468f0fb5e8517db33ff6ab77d12a0d9
-size 844
+package com.a508.studyservice.feign;
+
+import com.a508.studyservice.dto.response.StudyTimeFeignResponse;
+import com.a508.studyservice.global.common.response.SuccessResponse;
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
+
+import com.a508.studyservice.dto.response.FeignList;
+
+import feign.Headers;
+
+import java.util.List;
+
+@FeignClient(name = "user-service")
+public interface UserServiceFeignClient {
+
+    @GetMapping("/userId")
+    int getUserId(@RequestHeader("Authorization")  String token ) ;
+
+    @GetMapping("/allusercategories")
+    @Headers("Content-Type: application/json")
+    FeignList getAllUser();
+
+
+    @GetMapping("/studytime")
+    SuccessResponse<List<StudyTimeFeignResponse>> getStudyTime();
+
+
+
+
+}

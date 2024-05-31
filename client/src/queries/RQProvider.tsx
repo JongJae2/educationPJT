@@ -1,3 +1,27 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2e6c1662f66aba91755275d0ac6bd610b7e3804338af5d5d1b85cf07ee1565fd
-size 625
+'use client';
+
+import React, { useState } from 'react';
+import { QueryClientProvider, QueryClient, HydrationBoundary, DehydratedState } from '@tanstack/react-query';
+
+type Props = {
+  children: React.ReactNode;
+};
+
+function RQProvider({ children }: Props) {
+  const [client] = useState(
+    new QueryClient({
+      defaultOptions: {
+        queries: {
+          refetchOnWindowFocus: false,
+          retryOnMount: true,
+          refetchOnReconnect: false,
+          retry: false,
+        },
+      },
+    })
+  );
+
+  return <QueryClientProvider client={client}>{children}</QueryClientProvider>;
+}
+
+export default RQProvider;

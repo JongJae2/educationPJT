@@ -1,3 +1,38 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:39b853ffa1863c19e77f54350328dea92ef0a2db075f9c5c6810eeed4c6eae7a
-size 749
+package com.a508.studyservice.entity;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+
+import java.time.LocalDateTime;
+
+@Entity
+@Getter
+@Builder
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor
+@ToString
+public class TodayLearning {
+    //오늘의 학습
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    private Integer userId;
+
+    private Integer problemId;
+
+    private String type;
+
+    private String category;
+
+    private boolean correct;
+
+
+    @CreatedDate
+    private LocalDateTime createAt;
+
+}

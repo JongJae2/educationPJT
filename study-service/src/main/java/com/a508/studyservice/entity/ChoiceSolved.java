@@ -1,3 +1,44 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b16a1fc64d522e3eb381d34942b98026318685a6a506aeacce277d9c9ee34b55
-size 852
+package com.a508.studyservice.entity;
+
+import jakarta.persistence.*;
+import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
+import java.time.LocalDateTime;
+
+@Entity
+@Getter
+@Builder
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor
+@ToString
+@EntityListeners(AuditingEntityListener.class)
+public class ChoiceSolved {
+    //객관시 고른 거
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    private Integer userId;
+
+    private Integer userAnswer;
+
+    private Integer answer;
+
+    //어떤 유형 문제인지
+    private String type;
+
+    private Integer problemId;
+
+    private Integer spendTime;
+
+    private boolean correct;
+
+    @CreatedDate
+    private LocalDateTime createdAt;
+
+
+
+}

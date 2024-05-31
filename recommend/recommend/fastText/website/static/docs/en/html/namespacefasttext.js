@@ -1,3 +1,13 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:0e6d08b6eb8c4c31373a7dc7eb67809a020ff26ab47342cd4f17eea8067b54cb
-size 834
+var namespacefasttext =
+[
+    [ "Args", "classfasttext_1_1Args.html", "classfasttext_1_1Args" ],
+    [ "Dictionary", "classfasttext_1_1Dictionary.html", "classfasttext_1_1Dictionary" ],
+    [ "entry", "structfasttext_1_1entry.html", "structfasttext_1_1entry" ],
+    [ "FastText", "classfasttext_1_1FastText.html", "classfasttext_1_1FastText" ],
+    [ "Matrix", "classfasttext_1_1Matrix.html", "classfasttext_1_1Matrix" ],
+    [ "Model", "classfasttext_1_1Model.html", "classfasttext_1_1Model" ],
+    [ "Node", "structfasttext_1_1Node.html", "structfasttext_1_1Node" ],
+    [ "ProductQuantizer", "classfasttext_1_1ProductQuantizer.html", "classfasttext_1_1ProductQuantizer" ],
+    [ "QMatrix", "classfasttext_1_1QMatrix.html", "classfasttext_1_1QMatrix" ],
+    [ "Vector", "classfasttext_1_1Vector.html", "classfasttext_1_1Vector" ]
+];

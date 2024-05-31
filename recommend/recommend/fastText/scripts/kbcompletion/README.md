@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:943b45888c0f6a5049e1ef4d7ea2cd8369ca9a248c70638b035b43c991a9aaf8
-size 608
+# Fast Linear Model for Knowledge Graph Embeddings
+
+## Knowledge base completion
+
+These scripts require the [fastText library](https://github.com/facebookresearch/fastText).
+
+Run the data.sh script to download and format the datasets. Then run any of the scripts to train and test on a given dataset.
+
+## Reference
+
+If you use this code please cite:
+
+@article{joulin2017fast,
+  title={Fast Linear Model for Knowledge Graph Embeddings},
+  author={Joulin, Armand and Grave, Edouard and Bojanowski, Piotr and Nickel, Maximilian and Mikolov, Tomas},
+  journal={arXiv preprint arXiv:1710.10881},
+  year={2017}
+}
+

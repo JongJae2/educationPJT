@@ -1,3 +1,34 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:21ce024b71446c4953fc0f6a891659edd9d6eac33999476af9cadbd77ad66d56
-size 1116
+package com.a508.gameservice.game.service;
+
+import lombok.RequiredArgsConstructor;
+import org.springframework.messaging.simp.SimpMessagingTemplate;
+import org.springframework.stereotype.Component;
+
+import java.util.HashMap;
+import java.util.Map;
+
+@Component
+@RequiredArgsConstructor
+public class GameSchedulerManageService {
+
+    private final SimpMessagingTemplate simpMessagingTemplate;
+    private final GameQuizService gameQuizService;
+    private final Map<Integer, SchedulerService> gameSchedulerMap = new HashMap<>();
+
+    // 방의 GameScheduler를 생성
+    public void addRoom(int roomId, int quizCount) {
+        SchedulerService gameScheduler = new SchedulerService(gameQuizService, simpMessagingTemplate, roomId, quizCount);
+        gameSchedulerMap.put(roomId, gameScheduler);
+        gameScheduler.getQuizList();
+    }
+
+    // 방을 제거
+    public void removeRoom(int roomId) {
+        gameSchedulerMap.remove(roomId);
+    }
+
+    // 방 번호에 해당하는 GameScheduler를 반환
+    public SchedulerService getGameScheduler(int roomId) {
+        return gameSchedulerMap.get(roomId);
+    }
+}

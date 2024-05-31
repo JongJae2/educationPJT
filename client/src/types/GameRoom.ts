@@ -1,3 +1,23 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c84b5a662599b4449410c8ed258f60e45fc6aa509dc94fddea26419b99aec42
-size 559
+export interface GameRoomDetail {
+  roomName: string | undefined;
+  myNickname: string | undefined;
+  myUserId: number | undefined;
+  roomId: number | undefined;
+  maxNum: number | undefined;
+  quizCount: number | undefined;
+  creatorId: number | undefined;
+  roomPlayerRes: { userId: number; nickname: string }[];
+}
+
+export interface GameRoomInfo {
+  id: number;
+  roomName: string;
+  isSecret: boolean;
+  roomPassword: string;
+  nowNum: number;
+  maxNum: number;
+  isStarted: boolean;
+  roomCreatorName: string;
+  quizCount: number;
+  isEndPage: boolean;
+}

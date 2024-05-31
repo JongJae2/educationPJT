@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:5af91cb3d065fb9647ca7e4beea5f33982c152f73c4a508db41c933e13016e4d
-size 818
+import type { Metadata } from 'next';
+import Interest from '../_components/Interest';
+
+export const metadata: Metadata = {
+  title: '회원가입',
+  description: '문해력 학습 서비스 심심한 사과의 회원가입 페이지',
+};
+
+export default function Page() {
+  return (
+    <div className='flex flex-col items-center h-screen'>
+      <div className='py-20'></div>
+      <div className='text-xs w-80'>
+        <span className='text-ourBlue'> 2</span>
+        <span className='text-ourBlack'> / 3 </span>
+      </div>
+      <div className='pb-1'></div>
+      <div className='text-2xl font-semibold w-80'>관심 분야</div>
+      <div className='py-1 text-xs w-80 text-ourDarkGray'>관심 분야를 두 개 선택해 주세요.</div>
+      <div className='py-2'></div>
+      <Interest />
+    </div>
+  );
+}

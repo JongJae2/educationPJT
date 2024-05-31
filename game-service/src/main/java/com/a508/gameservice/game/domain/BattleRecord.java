@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7830bc9a9c1561c6db723e0b3ee9627e91a2fcc44afb8175c2d8b83df187beba
-size 802
+package com.a508.gameservice.game.domain;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.*;
+import org.hibernate.annotations.ColumnDefault;
+
+@Entity
+@Getter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
+public class BattleRecord {
+
+    @Id
+    Integer id;
+
+    @Column(nullable = false)
+    @ColumnDefault("0")
+    Integer victory;
+
+    @Column(nullable = false)
+    @ColumnDefault("0")
+    Integer game;
+
+    @Column(nullable = false)
+    @ColumnDefault("1500")
+    Integer rating;
+
+    public void gameUp() {
+        this.game = game+1;
+    }
+
+    public void victoryUp() {
+        this.victory = victory+1;
+    }
+
+    public void setRating(Integer rating) {
+        this.rating = rating;
+    }
+}

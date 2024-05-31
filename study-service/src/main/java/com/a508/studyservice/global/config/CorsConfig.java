@@ -1,3 +1,21 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:504da4a65a769ed3a3f4e46b8f089677b5072ffd6c91b49e275b622d170dbc59
-size 639
+package com.a508.studyservice.global.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import lombok.RequiredArgsConstructor;
+
+@Configuration
+public class CorsConfig implements WebMvcConfigurer {
+	@Override
+	public void addCorsMappings(CorsRegistry registry) {
+	registry.addMapping("/**")
+		.allowedOriginPatterns("*")
+		.allowedHeaders("*")
+		.exposedHeaders("*")
+		.allowedMethods("*")
+		.allowCredentials(true);
+	}
+}

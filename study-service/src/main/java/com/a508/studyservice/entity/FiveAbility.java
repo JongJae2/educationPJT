@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:4a883756f12933074b2cd0ad2619e4788388240ae5f86c86715d72e8fdda4d2a
-size 654
+package com.a508.studyservice.entity;
+
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Builder
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+public class FiveAbility {
+
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    private Integer userId;
+    private Integer fact;
+    private Integer inference;
+    private Integer voca;
+    private Integer recognition;
+    private Integer speed;
+}

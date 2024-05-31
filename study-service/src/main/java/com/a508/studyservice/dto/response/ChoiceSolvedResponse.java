@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:46d49b487ac8346853f1039310e23b5f1de75a5324859b84ab4f17cfee374aa2
-size 558
+package com.a508.studyservice.dto.response;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.CreatedDate;
+
+import java.time.LocalDateTime;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class ChoiceSolvedResponse {
+
+    private Integer userAnswer;
+
+    private Integer answer;
+
+    //어떤 유형 문제인지
+    private String type;
+
+    private Integer problemId;
+
+    private boolean correct;
+
+    private LocalDateTime createdAt;
+}

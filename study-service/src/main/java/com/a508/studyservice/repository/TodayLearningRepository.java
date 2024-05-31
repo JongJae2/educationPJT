@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:df78a43d32d24c9f4f3b4dc7d4583616ffafd66c76c8d5849820a663d5af2c20
-size 710
+package com.a508.studyservice.repository;
+
+
+import com.a508.studyservice.entity.TodayLearning;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Optional;
+
+@Repository
+public interface TodayLearningRepository  extends JpaRepository<TodayLearning,Integer> {
+
+    List<TodayLearning> findByUserId(Integer userId);
+
+    List<TodayLearning> findByUserIdAndCreateAtBetween(Integer userId, LocalDateTime startDate, LocalDateTime endDate);
+    List<TodayLearning> findByUserIdAndCreateAtBetweenAndType(Integer userId, LocalDateTime startDate, LocalDateTime endDate,String type);
+ }

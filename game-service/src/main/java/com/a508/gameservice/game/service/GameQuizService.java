@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6b5de76d56baf250d2317fe984e0c8edd28d7e9680be41ce85de2a26dfcd6016
-size 849
+package com.a508.gameservice.game.service;
+
+import com.a508.gameservice.game.domain.GameQuiz;
+import com.a508.gameservice.game.repository.GameQuizRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import java.security.SecureRandom;
+import java.util.ArrayList;
+import java.util.List;
+
+@Service
+@RequiredArgsConstructor
+public class GameQuizService {
+
+    private final GameQuizRepository gameQuizRepository;
+
+    public List<GameQuiz> getQuiz(int quizCount) {
+        List<GameQuiz> gameQuizList = new ArrayList<>();
+        List<GameQuiz> list = gameQuizRepository.findAll();
+
+        SecureRandom secureRandom = new SecureRandom();
+        for (int i = 0; i < quizCount; i++) {
+            gameQuizList.add(list.get(secureRandom.nextInt(list.size())));
+        }
+        return gameQuizList;
+    }
+}

@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:206b166a83ab1733c52c959f267f6204a7c84c84573d6fa4a4cb9c9c7f9b1abd
-size 1012
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      if (oldonload) {
+        oldonload();
+      }
+      func();
+    }
+  }
+}
+
+
+function tabber(){
+    let navTabs = document.getElementsByClassName("nav-tabs");
+    let selectAll = function(ind){
+        for(let navTab of navTabs){
+            let dom = navTab.childNodes[ind];
+            let old = dom.onclick;
+            dom.onclick = null;
+            dom.click();
+            dom.onclick = old;
+        }
+    }
+    let registerAll = function(){
+        for(let navTab of navTabs){
+            let commandLineTab = navTab.childNodes[0];
+            let pythonTab = navTab.childNodes[1];
+            commandLineTab.onclick = function(){
+                selectAll(0);
+            }
+            pythonTab.onclick = function(){
+                selectAll(1);
+            }
+        }
+    }
+    registerAll();
+};
+
+addLoadEvent(tabber);

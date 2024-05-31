@@ -1,3 +1,33 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:bddbd42a60de053f9796f668be6d6c9e3f24d4b440f15f5d3b8f5cb9657b0253
-size 809
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        ourTheme: '#0064FF',
+        ourBlue: '#4893FF',
+        ourPurple: '#CAB8FF',
+        ourPink: '#F0A8EA',
+        ourRed: '#FF8A8C',
+        ourYellow: '#FFC28A',
+        ourGreen: '#51D0A2',
+        ourLightGray: '#F2F2F2',
+        ourGray: '#D9D9D9',
+        ourDarkGray: '#737373',
+        ourBlack: '#202632',
+      },
+    },
+    fontFamily: {
+      Pretendard: ['Pretendard'],
+      Ansungtangmyun: ['Ansungtangmyun'],
+      Batang: ['Batang'],
+    },
+  },
+  plugins: [require('tailwind-scrollbar-hide')],
+};
+export default config;

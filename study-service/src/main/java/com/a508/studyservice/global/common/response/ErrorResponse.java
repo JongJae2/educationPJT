@@ -1,3 +1,39 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b685b7a9ef8ca7eb80fc8cce48264ed7b394617709731262b74bb9d10d943851
-size 913
+package com.a508.studyservice.global.common.response;
+
+import com.a508.studyservice.global.common.code.ErrorCode;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
+public class ErrorResponse {
+	// http status code
+	private int status;
+	// 에러 구분 코드
+	private String code;
+	// 에러 메시지
+	private String message;
+
+	public ErrorResponse(ErrorCode errorCode) {
+		this.status = errorCode.getStatus();
+		this.code = errorCode.getCode();
+		this.message = errorCode.getMessage();
+	}
+
+	public ErrorResponse(ErrorCode errorCode, String reason) {
+		this.status = errorCode.getStatus();
+		this.code = errorCode.getCode();
+		this.message = reason;
+	}
+
+	public static ErrorResponse of(ErrorCode errorCode) {
+		return new ErrorResponse(errorCode);
+	}
+
+	public static ErrorResponse of(ErrorCode errorCode, String reason) {
+		return new ErrorResponse(errorCode, reason);
+	}
+
+
+}

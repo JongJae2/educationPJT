@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7ea70aa0f81d1a1ec47a7ca1b90ada59ca5a3f023aef76b7e17ab74c8c183f2b
-size 584
+import instance from '@/utils/interceptor';
+import { useQuery } from '@tanstack/react-query';
+
+type IAbilities = {
+  data: number[][];
+};
+
+async function getAbilities() {
+  try {
+    const res = await instance.get<IAbilities>(`${process.env.NEXT_PUBLIC_API_SERVER}/user-service/ability`);
+    return res.data;
+  } catch (e) {
+    // console.log('분석 보고서 데이터 조회 에러: ', e);
+    return null;
+  }
+}
+
+export const useGetAbilities = () => {
+  const { data, isLoading } = useQuery({ queryKey: ['abilities'], queryFn: getAbilities });
+
+  return { data, isLoading };
+};
